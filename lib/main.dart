@@ -4,18 +4,18 @@ import 'package:iot_thai_moneyshare_project/views/splash_screen_ui.dart';
 
 void main() {
   runApp(
-      //เรียกใช้คลาสที่เรียกใช้ widget หลักของแอปฯ MaterialApp()
-      IoTThaiMoneyshare());
+    //เรียกใช้คลาสที่เรียกใช้วิดเจตหลักของแอป meterialApp()
+    IoTThaiMoneyshare());
 }
- 
-//---------------------------------
+
+//-----------------------------------
 class IoTThaiMoneyshare extends StatefulWidget {
   const IoTThaiMoneyshare({super.key});
- 
+
   @override
   State<IoTThaiMoneyshare> createState() => _IoTThaiMoneyshareState();
 }
- 
+
 class _IoTThaiMoneyshareState extends State<IoTThaiMoneyshare> {
   @override
   Widget build(BuildContext context) {

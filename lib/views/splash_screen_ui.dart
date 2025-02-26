@@ -9,52 +9,50 @@ class SplashScreenUI extends StatefulWidget {
 }
 
 class _SplashScreenUIState extends State<SplashScreenUI> {
-
   @override
   void initState() {
+    //โค้ดหน่วงหน้าจอ
     Future.delayed(
       Duration(seconds: 3),
       () => Navigator.pushReplacement(
         context,
         MaterialPageRoute(
-        builder:(context) => MoneyInputUI(),
+          builder: (context) => MoneyInputUI(),
         ),
       ),
     );
-
+ 
     super.initState();
   }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.lightGreen,
+      backgroundColor: Colors.purple,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset(
-              "assets/images/money.png",
+              'assets/images/money.png',
               width: MediaQuery.of(context).size.width * 0.5,
             ),
             Text(
               'แชร์เงินกันเถอะ',
               style: TextStyle(
-                fontSize: MediaQuery.of(context).size.height * 0.025,
+                fontSize: MediaQuery.of(context).size.height * 0.035,
                 fontWeight: FontWeight.bold,
                 color: Colors.white,
               ),
             ),
             Text(
-              'Crate by Saranchai',
+              'Create by Saranchai',
               style: TextStyle(
-                fontSize: MediaQuery.of(context).size.height * 0.025,
-                fontWeight: FontWeight.bold,
+                fontSize: MediaQuery.of(context).size.height * 0.02,
                 color: Colors.white,
               ),
             ),
             SizedBox(
-              height: MediaQuery.of(context).size.height * 0.025,
+              height: MediaQuery.of(context).size.height * 0.06,
             ),
             CircularProgressIndicator(
               color: Colors.white,
